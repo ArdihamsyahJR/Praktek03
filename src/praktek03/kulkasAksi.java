@@ -7,6 +7,8 @@ public class kulkasAksi {
         k.setMerek("Toshiba");
         k.setWarna("silver");
         k.setHarga("500");
+        
+        
    k.cetakInfo();
  
    System.out.println("Mereknya \t: ");
@@ -16,6 +18,15 @@ public class kulkasAksi {
    System.out.println("Harganya \t: ");
    System.out.println(k.getHarga());
     
+    kulkas2pintu sm = new kulkas2pintu();
+    sm.setMerek("TOSHIBA");
+    sm.setWarna("merah");
+    sm.setHarga("600");
+    sm.setJeniskulkas("Listrik");
+    sm.cetakInfo();
+    System.out.println("Jenis \t:"+sm.getJeniskulkas());
+    sm.throttle();
     }
+    
  
 }
